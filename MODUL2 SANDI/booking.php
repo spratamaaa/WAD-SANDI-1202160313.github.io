@@ -49,7 +49,7 @@ if(isset($_POST["jenis"])){
         <label >Check-in</label>
         <input type="date" class="form-control" id="date" name="date">
         <label >Duration</label>
-        <input type="text" class="form-control" id="duration" name="duration">
+        <input type="text" class="form-control" id="duration" nama="duration">
         <label ><small>Day(s)</small></label><br>
         <label >Room Type</label><br>
             <select name="jenis" id="jenis">
