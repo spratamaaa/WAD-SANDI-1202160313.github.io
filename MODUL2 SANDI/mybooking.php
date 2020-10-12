@@ -4,7 +4,7 @@ $date = $_POST["date"];
 $duration = $_POST["duration"];
 $jenis = $_POST["jenis"];
 $ordernum = rand(1000,9999);
-$phone= $_POST["phone"];
+$phone= $_POST["phnumber"];
 $checkout = date('Y-m-d', strtotime('+'.$duration.'days', strtotime($date)));
 if($jenis == "Standard"){
     $price = 90;

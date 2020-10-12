@@ -48,7 +48,7 @@
                 <li class="list-group-item">1 Bathroom</li>
             </ul>
             <div class="card-body">
-                <form action="booking.php" metohd="post">
+                <form action="booking.php" method="post">
                     <input name="url" value="https://th.bing.com/th/id/OIP.vuRkWoY0aIEBO-hHnpnYJQHaE8?pid=Api&rs=1" hidden>
             <input name="jenis" value="Standard" hidden>
             <button type="submit" class="btn btn-primary">Book now</button>
@@ -67,7 +67,7 @@
                 <li class="list-group-item">1 Bathroom with hot water</li>
             </ul>
             <div class="card-body">
-                <form action="booking.php" metohd="post">
+                <form action="booking.php" method="post">
             <input name="url" value="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/86/2018/12/18015307/Superior-king-bed-room-cottage-at-pullman-danang-beach-resort-vietnam.jpg" hidden>
             <input name="jenis" value="Superior" hidden>
             <button type="submit" class="btn btn-primary">Book now</button>
@@ -88,7 +88,7 @@
                 <li class="list-group-item">1 Workroom</li>
             </ul>
             <div class="card-body">
-                <form action="booking.php" metohd="post">
+                <form action="booking.php" method="post">
                     <input name="url" value="https://th.bing.com/th/id/OIP.ay2-K75juyHAkCWdZhlBIwHaE3?pid=Api&rs=1" hidden>
             <input name="jenis" value="Luxury" hidden>
             <button type="submit" class="btn btn-primary">Book now</button>
