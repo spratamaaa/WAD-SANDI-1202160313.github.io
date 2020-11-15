@@ -2,7 +2,7 @@
 require_once('connect.php');
 $id = $_GET['id'];
 $sql ="SELECT * FROM event_table WHERE id=$id";
-$query = mysqli_query($conn, $sql);  
+$query = mysqli_query($con, $sql);  
 ?>
 <!DOCTYPE html>
 <html lang="en">

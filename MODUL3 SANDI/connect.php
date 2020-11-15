@@ -1,7 +1,6 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = "";
 $db = "wad_modul3_sandi";
 
 $conn = mysqli_connect($host,$user,$pass,$db);
