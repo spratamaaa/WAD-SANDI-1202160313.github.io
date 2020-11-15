@@ -42,7 +42,7 @@ require_once('connect.php');
       <label for=""><b>Name</b></label><br>
         <input type="text" class="form-control input-sm" name="nama" id="nama" required><br>
         <label for=""><b>Deskripsi</b></label><br>
-        <input type="text" class="form-control input-lg"name="deskripsi" id="deskripsi" required><br>
+        <textarea class="form-control" name="deskripsi" id="deskripsi" rows="9" required></textarea>
         <label for=""><b>Upload Gambar</b></label><br>
         <input type="file" name="gambar" id="gambar" required><br>
         <label for=""><b>Kategori</b></label><br>

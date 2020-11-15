@@ -95,7 +95,7 @@ $query = mysqli_query($conn, $sql);
       <label for=""><b>Name</b></label><br>
         <input type="text" class="form-control input-sm" name="nama" id="nama" value="<?=$data['name'];?>"required><br>
         <label for=""><b>Deskripsi</b></label><br>
-        <input type="text" class="form-control input-lg"name="deskripsi" id="deskripsi" value="<?=$data['deskripsi'];?>"required><br>
+        <textarea class="form-control" name="deskripsi" id="deskripsi" value="<?=$data['deskripsi'];?>" rows="8"><?=$data['deskripsi'];?></textarea>
         <label for=""><b>Upload Gambar</b></label><br>
         <input type="file" name="gambar" id="gambar" value="<?php echo $data['gambar']?>" ><br>
         <label for=""><b>Kategori</b></label><br>
