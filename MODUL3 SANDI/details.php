@@ -1,8 +1,8 @@
 <?php
 require_once('connect.php');
 $id = $_GET['id'];
-$sql ="SELECT * FROM event_table WHERE id=$id";
-$query = mysqli_query($con, $sql);  
+$sql ="SELECT * FROM event_table WHERE id= $id";
+$query = mysqli_query($conn, $sql);  
 ?>
 <!DOCTYPE html>
 <html lang="en">

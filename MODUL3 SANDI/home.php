@@ -1,6 +1,6 @@
 <?php
 require_once('connect.php');
-$sql ="SELECT * FROM eventtable";
+$sql ="SELECT * FROM event_table";
 $query = mysqli_query($conn, $sql);  
 ?>
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ $query = mysqli_query($conn, $sql);
                             </div>
                             
                             <div class="card-body">
-                            <a type="button" class="btn btn-primary" href="details.php?id=<? $data['id']?>">Detail</a>
+                            <a type="button" class="btn btn-primary" href="details.php?id= <?= $data['id']?>">Detail</a>
                             </div>
                             </div>
                    <?php $angka++;}?>
