@@ -8,9 +8,9 @@ if(! isset($_SESSION['sudah_login']))
 }
 $id = $_SESSION['id'];
 $tampil =$db->tampilbarang($id);
-if(isset($_GET['delete']))
+if(isset($_POST['delete']))
     {
-        $idbrg = $_GET['delete'];
+        $idbrg = $_POST['delete'];
         $status = $db->hapusbarang($idbrg);
         if($status)
         {
