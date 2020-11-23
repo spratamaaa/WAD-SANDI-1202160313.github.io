@@ -76,7 +76,7 @@ if(isset($_POST['login']))
         <label for="">Kata Sandi</label><br>
         <input type="password" class="form-control input-lg" name="pass" id="pass" placeholder="masukan password" required><br>
         <input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["user_login"])) { ?> checked <?php } ?> />
-		<label for="remember-me">Remember me</label><br>
+		    <label for="remember-me">Remember me</label><br>
         <div class="text-center">
         <input type="submit" class="btn btn-primary" name="login" value="Login">
         </form>

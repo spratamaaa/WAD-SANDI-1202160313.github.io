@@ -17,10 +17,10 @@ class database {
 
     function login($email,$pass,$remember)
 	{
-		$query = mysqli_query($this->conn,"select * from user where email='$email'");
+		$query = mysqli_query($this->conn,"select * from user where email ='$email'");
         $data_user = $query->fetch_array();
-        if($data_user == null){
-		if($pass != $data_user['password'])
+        if($data_user != null){
+		if($pass == $data_user['password'])
 		{
 			
 			if($remember)
@@ -35,7 +35,7 @@ class database {
 
             $_SESSION['id'] = $data_user['id'];
 			$_SESSION['email'] = $email;
-			$_SESSION['name'] = $data_user['nama'];
+			$_SESSION['nama'] = $data_user['nama'];
             $_SESSION['sudah_login'] = TRUE;
             if(!isset($_COOKIE['navbar'])){
             setcookie('navbar', "bg-light", time() + (60 * 60 * 24 * 5), '/');
@@ -61,8 +61,8 @@ class database {
 		$_SESSION['nama'] = $user['nama'];
 		$_SESSION['sudah_login'] = TRUE;
 	}
-    public function update($nama,$nohp,$pass,$id,$conn){
-            $update = mysqli_query($conn,"UPDATE user SET nama='$nama', no_hp='$nohp', password='$pass' WHERE id=='$id'");
+    public function update($nama,$nohp,$pass,$id){
+            $update = mysqli_query($this->conn,"UPDATE user SET nama='$nama', no_hp='$nohp', password='$pass' WHERE id=='$id'");
         return $update; 
     }
     public function tampiluser($id){

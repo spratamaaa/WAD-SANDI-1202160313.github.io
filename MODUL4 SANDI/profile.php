@@ -20,7 +20,7 @@ if(isset($_POST['update']))
   $nama = $_POST['nama'];
   $nohp = $_POST['nohp'];
   
-        if($db->update($nama,$nohp,$pass,$id,$conn))
+        if($db->update($nama,$nohp,$pass,$id))
         {
           echo '<script type="text/javascript">'; 
           echo 'alert("Update berhasil!");'; 
